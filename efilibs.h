@@ -16,19 +16,19 @@ void SetColor(UINTN Attribute)
     SystemTable->ConOut->SetAttribute(SystemTable->ConOut, Attribute);
 }
 
-void SetTextPosition(UINT32 Col, UINT32 Row)
-{
-    // Sets the Column and Row of the text screen cursor position.
-    SystemTable->ConOut->SetCursorPosition(SystemTable->ConOut, Col, Row);
-}
+// void SetTextPosition(UINT32 Col, UINT32 Row)
+// {
+//     // Sets the Column and Row of the text screen cursor position.
+//     SystemTable->ConOut->SetCursorPosition(SystemTable->ConOut, Col, Row);
+// }
 
 
 
-void ClearScreen()
-{
-    // This clears the screen buffer, but does not reset it.
-    SystemTable->ConOut->ClearScreen(SystemTable->ConOut);
-}
+// void ClearScreen()
+// {
+//     // This clears the screen buffer, but does not reset it.
+//     SystemTable->ConOut->ClearScreen(SystemTable->ConOut);
+// }
 
 
 

@@ -15,31 +15,31 @@ EFI_STATUS efi_main(EFI_HANDLE ImageHandle, EFI_SYSTEM_TABLE *ST)
     ResetScreen();
 
     SetColor(EFI_WHITE);
-    SetTextPosition(3,2);
+    // SetTextPosition(3,2);
 
-    Print(u"Welcome to SpectraOS");
+    Print(u"Welcome to SpectraOS\r\n\r\n");
 
     SetColor(EFI_YELLOW);
-    SetTextPosition(3, 5);
+    // SetTextPosition(3, 5);
 
-    Print(u"Developed by Machado && Moro");
+    Print(u"Developed by Machado && Moro\r\n\r\n");
 
     SetColor(EFI_GREEN);
-    SetTextPosition(8,8);
+    // SetTextPosition(8,8);
 
-    Print(u"Press any key...");
+    Print(u"\r\nPress any key...\r\n");
 
     HitAnyKey();
 
     ClearScreen();
 
     SetColor(EFI_MAGENTA);
-    SetTextPosition(2,1);
-    Print(u"Thanks for using SpectraOS!");
+    // SetTextPosition(2,1);
+    Print(u"\r\nThanks for using SpectraOS!");
 
     SetColor(EFI_CYAN);
-    SetTextPosition(2, 4);
-    Print(u"Press any key to shutdown...");
+    // SetTextPosition(2, 4);
+    Print(u"\r\nPress any key to shutdown...\r\n");
 
     HitAnyKey();
     //EFI_SUCESSFFUL == EVERYTHINGS OK

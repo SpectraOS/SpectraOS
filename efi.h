@@ -109,30 +109,30 @@ typedef EFI_STATUS (*EFI_TEXT_SET_ATTRIBUTE)(struct EFI_SIMPLE_TEXT_OUTPUT_PROTO
 
 //THe struuct for the EFI Text Output Mode
 //UEFI 2.9 Specs PDF Page 450
-typedef struct SIMPLE_TEXT_OUTPUT_MODE 
-{
+// typedef struct SIMPLE_TEXT_OUTPUT_MODE 
+// {
 
-UINT32 MaxMode; // current settings
-UINT32 Mode;
-UINT32 Attribute;
-UINT32 CursorColumn;
-UINT32 CursorRow;
-BOOLEAN CursorVisible;
-} SIMPLE_TEXT_OUTPUT_MODE;
+// UINT32 MaxMode; // current settings
+// UINT32 Mode;
+// UINT32 Attribute;
+// UINT32 CursorColumn;
+// UINT32 CursorRow;
+// BOOLEAN CursorVisible;
+// } SIMPLE_TEXT_OUTPUT_MODE;
 // The struct for the EFI Text Output protocols.
 // UEFI 2.9 Specs PDF Page 449
 typedef struct EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL
 {
     EFI_TEXT_RESET                         Reset;
     EFI_TEXT_STRING                        OutputString;
-    EFI_TEXT_CLEAR_SCREEN                  ClearScreen;
-    EFI_TEXT_ENABLE_CURSOR                 EnableCursor;
-    EFI_TEXT_SET_CURSOR_POSITION           SetCursorPosition;
+    // EFI_TEXT_CLEAR_SCREEN                  ClearScreen;
+    // EFI_TEXT_ENABLE_CURSOR                 EnableCursor;
+    // EFI_TEXT_SET_CURSOR_POSITION           SetCursorPosition;
     EFI_TEXT_TEST_STRING                   TestString;
     EFI_TEXT_QUERY_MODE                    QueryMode;
     EFI_TEXT_SET_MODE                      SetMode;
     EFI_TEXT_SET_ATTRIBUTE                 SetAttribute;
-    SIMPLE_TEXT_OUTPUT_MODE                *Mode;
+    // SIMPLE_TEXT_OUTPUT_MODE                *Mode;
 } EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL;
 
 // This is the main EFI header for all of the EFI.
